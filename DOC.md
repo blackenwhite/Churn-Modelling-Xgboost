@@ -42,6 +42,9 @@ Sometimes in datasets, we encounter columns that contain numbers of no specific 
 
 ## References:
 https://www.geeksforgeeks.org/ml-one-hot-encoding-of-datasets-in-python/
+
 http://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OneHotEncoder.html
+
 http://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.LabelEncoder.html
+
 https://www.datacamp.com/community/tutorials/xgboost-in-python
