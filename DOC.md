@@ -31,7 +31,17 @@ XGBoost also supports regularization parameters to penalize models as they becom
     alpha: L1 regularization on leaf weights. A large value leads to more regularization.
     lambda: L2 regularization on leaf weights and is smoother than L1 regularization.
 
+## One-Hot Encoding and Label Encoding
+
+In machine learning, we usually deal with datasets which contains multiple labels in one or more than one columns. These labels can be in the form of words or numbers. To make the data understandable or in human readable form, the training data is often labeled in words.
+
+Label Encoding refers to converting the labels into numeric form so as to convert it into the machine-readable form. Machine learning algorithms can then decide in a better way on how those labels must be operated. It is an important pre-processing step for the structured dataset in supervised learning.
+
+Sometimes in datasets, we encounter columns that contain numbers of no specific order of preference. The data in the column usually denotes a category or value of the category and also when the data in the column is label encoded. This confuses the machine learning model, to avoid this the data in the column should be One Hot encoded.
 
 
 ## References:
+https://www.geeksforgeeks.org/ml-one-hot-encoding-of-datasets-in-python/
+http://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OneHotEncoder.html
+http://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.LabelEncoder.html
 https://www.datacamp.com/community/tutorials/xgboost-in-python
