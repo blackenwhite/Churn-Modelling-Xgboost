@@ -13,6 +13,24 @@ The dataset is a compilation of records of various employees and their following
 
 'CustomerId', 'Surname', 'CreditScore', 'Geography','Gender', 'Age', 'Tenure', 'Balance', 'NumOfProducts', 'HasCrCard','IsActiveMember', 'EstimatedSalary', 'Exited'
 
+The last of them is the target variable for us while the rest comprise the feature-set X
+
+## XGBoost's hyperparameters
+
+
+    learning_rate: step size shrinkage used to prevent overfitting. Range is [0,1]
+    max_depth: determines how deeply each tree is allowed to grow during any boosting round.
+    subsample: percentage of samples used per tree. Low value can lead to underfitting.
+    colsample_bytree: percentage of features used per tree. High value can lead to overfitting.
+    n_estimators: number of trees you want to build.
+    objective: determines the loss function to be used like reg:linear for regression problems, reg:logistic for classification problems with only decision, binary:logistic for classification problems with probability.
+
+XGBoost also supports regularization parameters to penalize models as they become more complex and reduce them to simple (parsimonious) models.
+
+    gamma: controls whether a given node will split based on the expected reduction in loss after the split. A higher value leads to fewer splits. Supported only for tree-based learners.
+    alpha: L1 regularization on leaf weights. A large value leads to more regularization.
+    lambda: L2 regularization on leaf weights and is smoother than L1 regularization.
+
 
 
 ## References:
