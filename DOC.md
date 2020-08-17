@@ -8,6 +8,11 @@ XGBoost is well known to provide better solutions than other machine learning al
 
 Boosting is a sequential technique which works on the principle of an ensemble. It combines a set of weak learners and delivers improved prediction accuracy. At any instant t, the model outcomes are weighed based on the outcomes of previous instant t-1. The outcomes predicted correctly are given a lower weight and the ones miss-classified are weighted higher.
 
+## Dataset and features
+The dataset is a compilation of records of various employees and their following features:
+
+'CustomerId', 'Surname', 'CreditScore', 'Geography','Gender', 'Age', 'Tenure', 'Balance', 'NumOfProducts', 'HasCrCard','IsActiveMember', 'EstimatedSalary', 'Exited'
+
 
 
 ## References:
