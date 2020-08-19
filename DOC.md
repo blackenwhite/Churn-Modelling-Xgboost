@@ -51,6 +51,14 @@ Split arrays or matrices into random train and test subsets
 
 Quick utility that wraps input validation and next(ShuffleSplit().split(X, y)) and application to input data into a single call for splitting (and optionally subsampling) data in a oneliner.
 
+## K-Fold-Cross Validation
+
+Cross-validation is a resampling procedure used to evaluate machine learning models on a limited data sample.
+
+The procedure has a single parameter called k that refers to the number of groups that a given data sample is to be split into. As such, the procedure is often called k-fold cross-validation. When a specific value for k is chosen, it may be used in place of k in the reference to the model, such as k=10 becoming 10-fold cross-validation.
+
+Cross-validation is primarily used in applied machine learning to estimate the skill of a machine learning model on unseen data. That is, to use a limited sample in order to estimate how the model is expected to perform in general when used to make predictions on data not used during the training of the model.
+
 ## References:
 https://www.geeksforgeeks.org/ml-one-hot-encoding-of-datasets-in-python/
 
